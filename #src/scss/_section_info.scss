@@ -1,0 +1,47 @@
+@import "mixin";
+
+.section__info {
+   width: 17.25em; //276px;
+   margin: 0 auto;
+   background-color: $base-color;
+     @media screen and (min-width: 768px) {
+       width: 45.5em; //728px;
+     }
+     @media screen and (min-width: 1440px) {
+       width: 56.25em; //900px;
+      //  padding-bottom: 6.25em; //100px;
+       display: flex;
+       justify-content: space-between;
+     }
+     &__title {
+      @include fontsDisplayBlack;
+       font-size: 2.5em; //40px;
+       color: #FFFFFF;
+       margin-bottom: 1em; //16px;
+         @media screen and (min-width: 786px) {
+           font-size: 3.5em; //56px;
+         }
+         @media screen and (min-width: 1440px) {
+           width: 26.875em; //430px;
+         }
+       &__cover {
+         color: $turquoise-color;
+       }
+     }
+     &__text {
+       text-align: left;
+       font-family: Helvetica Now Display;
+       font-style: normal;
+       font-weight: normal;
+       font-size: 1em; //16px;
+       line-height: 1.55em; //24.8px;
+       color: #FFFFFF;
+       padding-bottom: 2.625em; //42px;
+         @media screen and (min-width: 786px) {
+         width: 33.375em; //534px;
+         }
+         @media screen and (min-width: 1440px) {
+           font-size: 1.5em; //24px;
+         }
+     }
+ } 

@@ -1,0 +1,60 @@
+@font-face {
+	font-family: 'Helvetica Now Display Black';
+	src: url('../fonts/HelveticaNowDisplayBlack.otf');
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Now Display Medium';
+  src: url('../fonts/Monotype\ \ -\ Helvetica\ Now\ Display\ Medium.otf');
+  src: local('☺'), url('../fonts/Monotype\ \ -\ Helvetica\ Now\ Display\ Medium.otf') format('woff'), url('../fonts/Monotype\ \ -\ Helvetica\ Now\ Display\ Medium.otf') format('truetype'), url('../fonts/Monotype\ \ -\ Helvetica\ Now\ Display\ Medium.otf') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Now Display XBold';
+  src: url('../fonts/Monotype\ \ -\ Helvetica\ Now\ Display\ XBold.otf');
+  src: local('☺'), url('../fonts/Monotype\ \ -\ Helvetica\ Now\ Display\ XBold.otf') format('woff'), url('../fonts/Monotype\ \ -\ Helvetica\ Now\ Display\ XBold.otf') format('truetype'), url('../fonts/Monotype\ \ -\ Helvetica\ Now\ Display\ XBold.otf') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Now Display Bold';
+  src: url('../fonts/Monotype\ \ -\ Helvetica\ Now\ Display\ Bold.otf');
+  src: local('☺'), url('../fonts/Monotype\ \ -\ Helvetica\ Now\ Display\ Bold.otf') format('woff'), url('../fonts/Monotype\ \ -\ Helvetica\ Now\ Display\ Bold.otf') format('truetype'), url('../fonts/Monotype\ \ -\ Helvetica\ Now\ Display\ Bold.otf') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@mixin title {
+	font-family: 'Helvetica Now Display Black';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 32px;
+	line-height: 90%;
+	letter-spacing: -1px;
+	color: #202523;
+}
+@mixin text {
+	font-family: 'Helvetica Now Display Medium';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1em; //16px;
+	line-height: 25px;
+	color: #596067;
+}
+
+@mixin fontsDisplayBlack {
+	font-family: 'Helvetica Now Display Black';
+	font-style: normal;
+	font-weight: 900;
+}
+@mixin fontsDisplayXBold {
+	font-family: 'Helvetica Now Display XBold';
+	font-style: normal;
+	font-weight: 800;
+}
+@mixin fontsDisplayBold {
+	font-family: 'Helvetica Now Display Bold';
+	font-style: normal;
+	font-weight: 700;
+}

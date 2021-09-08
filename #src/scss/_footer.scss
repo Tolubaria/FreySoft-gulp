@@ -1,0 +1,87 @@
+@import "mixin";
+
+
+.footer {
+   background-color: $base-color;
+   &__cover {
+      @media screen and (min-width: 768px) {
+         width: 44.875em; //718px;
+         margin: 0 auto;
+         display: flex;
+         flex-flow: wrap;
+         justify-content: space-between;
+         padding-top: 1.5em; //24px;
+         padding-bottom: 1.6875em; //27px;
+      }
+      @media screen and (min-width: 1440px) {
+         width: 78.75em; //1260px;
+      }
+      @media screen and (min-width: 1920px) {
+         width: 90em; //1440px;
+         padding-bottom: 1.6875em; //27px;
+      }
+   }
+   &__rights {
+      padding-top: 27px;
+      @include text;
+      font-size: 0.8125em; //13px;
+      line-height: 1.35625em; //21.7px
+      text-align: center;
+      color: #A4AFC1;
+         @media screen and (min-width: 768px) {
+            padding-top: 0em; //0px;
+            font-size: 0.875em; //14px;
+            order: 1;  
+         }
+         @media screen and (min-width: 1440px) {
+            
+         }
+   }
+   &__info {
+      width: 14.6875em; //235px;
+      margin: 0 auto;
+      padding-top: 0.4375em; //7px;
+      display: flex;
+      justify-content: space-between;
+         @media screen and (min-width: 768px) {
+            order: 3;
+            padding-top: 0em;
+         }
+         @media screen and (min-width: 1440px) {
+            order: 2;  
+         }
+   &__item {
+      @media screen and (min-width: 1440px) { 
+      }
+      &__link {
+         @include text;
+         font-size:  0.8125em; //13px;
+         line-height: 1.35625em; //21.7px
+         color: #A4AFC1;
+         text-decoration: none;
+            @media screen and (min-width: 768px) {
+               font-size: 0.875em; //14px;
+            }
+      }
+   }
+   }
+   &__social {
+      width: 6.25em; //100px;
+      margin: 0 auto;
+      padding-top: 1.5em; //24px;
+      padding-bottom: 2em; //32px;
+      display: flex;
+      justify-content: space-between;
+         @media screen and (min-width: 768px) {
+            order: 2;
+            padding: 0em;
+         }
+         @media screen and (min-width: 1440px) {
+            order: 3; 
+         }
+   }
+}
+.fa-facebook-f, .fa-linkedin-in, .fa-twitter {
+   color: #A4AFC1;
+   font-size: 1em; //16px;
+}

@@ -1,0 +1,16 @@
+$base-color: #020213;
+$turquoise-color: #18e8a4;
+$gray-color: #D5D4D9;
+ 
+@import "reset";
+@import "mixin";
+
+@import "_header";
+@import "_section_info";
+@import "_block_img";
+@import "_about_company";
+@import "_footer";
+
+.container {
+    width: 100%;
+}

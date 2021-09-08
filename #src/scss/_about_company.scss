@@ -1,0 +1,329 @@
+@import "mixin";
+
+.about-company {
+   &__block {
+      width: 17.5em; //280px;
+      padding-top: 3em; //48px;
+      margin: 0 auto;
+         @media screen and (min-width: 768px) {
+            width: 45.625em; //730px;
+            padding-top: 5em; //80px;
+         }
+         @media screen and (min-width: 1440px) {
+            width: 78.75em; //1260px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 6.25em; //100px;
+         }
+   }
+   &__title {
+      padding-bottom: 1.9375em; //31px;
+      text-align: left;
+      @include title;
+         @media screen and (min-width: 768px) {
+            font-size: 2em; //32px;
+            padding-bottom: 3em; //48px;
+         }
+         @media screen and (min-width: 1440px) {
+            font-size: 3.875em; //62px;
+            margin-top: 0em; //0px;
+         }
+   }
+   &__textBox {
+      @media screen and (min-width: 768px) {
+         display: flex;
+         justify-content: space-between;
+      }
+   }
+   &__text {
+      margin-bottom: 1.9375em; //31px;
+      @include text;
+      color: #545460;
+         @media screen and (min-width: 768px) {
+            width: 21.75em; //348px;
+         }
+         @media screen and (min-width: 1440px) {
+            width: 27.5em; //440px;
+            margin-right: 2.5em; //40px;
+         }
+   }
+}
+
+.recruitment {
+   background-color: $gray-color;
+   position: relative;
+   &__block {
+      width: 17.5em; //280px;
+      margin: 0 auto;
+      padding-bottom: 3.4375em; //55px;
+         @media screen and (min-width: 768px) {
+            width: 45.625em; //730px;
+         }
+         @media screen and (min-width: 1440px) {
+            width: 78.75em; //1260px;
+            margin: 0 auto;
+            padding-top: 6.25em; //100px;
+            display: flex;
+            justify-content: space-between; 
+         }
+   }
+   &__title {
+      padding-top: 64px;
+      padding-bottom: 1.75em; //28px;
+      @include title;
+         @media screen and (min-width: 768px) {
+            padding-top: 80px;
+         }
+         @media screen and (min-width: 1440px) {
+            padding-top: 0em; //0px;
+            width: 18.75em; //300px;
+            font-size: 3.875em; //62px; 
+         }
+   }
+   &__textBox {
+      @media screen and (min-width: 768px) {
+         display: flex;
+         justify-content: space-between;
+      }
+      @media screen and (min-width: 1440px) {
+         display: block;
+         width: 38.25em; //612px;
+      }
+   }
+   &__text {
+      padding-bottom: 1.5em; //24px;
+      @include text;
+      color: #485563;
+         @media screen and (min-width: 768px) {
+            width: 21.125em; //338px;   
+         }
+         @media screen and (min-width: 1440px) {
+            width: 600px;
+            font-size: 1.5em; //24px; 
+         }
+   }
+   &__flow {
+      position: absolute;
+      top: 1000px;
+      width: 500px;
+      height: 155px;
+      z-index: 2;
+         @media screen and (min-width: 768px) {
+            display: none; 
+         }
+   }
+   &__arrow {
+      display: none;
+         @media screen and (min-width: 768px) {
+            position: absolute;
+            display: block;
+            width: 100%;
+            top: 840px;
+            z-index: 2;
+         }
+         @media screen and (min-width: 1440px) {
+            width: 89.375em; //1430px;
+            top: 48.75em; //780px;
+            left: 0.3125em; //5px;
+         }
+         @media screen and (min-width: 1920px) {
+            margin: 0 13%;
+            width: 87.8125em; //1405px;
+            top: 48.75em; //780px;
+            left: 0.3125em; //5px; 
+         }
+   }
+   &__scrol {
+      width: 1em; //16px;
+      height: 1em; //16px;
+      border-radius: 3.125em; //50px;
+      background: rgba(0, 0, 0, 0.1);
+      box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.09);
+      &__box {
+         width: 6.25em; //100px;
+         margin: 0 33%;
+         margin-top: 6.75em; //108px;
+         padding-bottom: 3em; //48px;
+         display: flex;
+         justify-content: space-between;
+            @media screen and (min-width: 1440px) {
+               display: none;
+            }
+      }
+   }
+}
+
+.scrol-1 {
+   width: 2.5em; //40px;
+   height: 1em; //16px;
+   border-radius: 0.625em; //10px;
+   background-color: #18E8A4;
+}
+
+.stage {
+   width: 17.5em; //280px;
+   height: 32.125em; //514px;
+   background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(117.15deg, #1BD1FC 0%, #316DD1 100%);
+   box-shadow: 0px 32px 16px rgba(0, 0, 0, 0.09), 0px 16px 8px rgba(0, 0, 0, 0.09), 0px 8px 4px rgba(0, 0, 0, 0.09), 0px 4px 2px rgba(0, 0, 0, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.09);
+   border-radius: 1em; //16px;
+      @media screen and (min-width: 768px) {
+         width: 22.125em; //354px;
+      }
+      @media screen and (min-width: 1440px) {
+         width: 38.75em; //620px;
+         height: 28.5625em; //457px;
+         margin-bottom: 13.125em; //210px;
+      }
+   &__box {
+      display: flex;
+      justify-content: space-between;
+         @media screen and (min-width: 768px) {
+            width: 45em; //720px;
+            margin: 0 auto;
+         }
+         @media screen and (min-width: 1440px) {
+            width: 81.25em; //1300px;
+            margin: 0 auto;
+         }
+   }
+   &__cover {
+      width: 17.5em; //280px;
+      margin: 0 0.625em; //0 10px;
+      padding-top: 2em; //32px;
+      z-index: 2;
+      position: relative;
+         @media screen and (min-width: 768px) {
+         }
+         @media screen and (min-width: 1440px) {
+            margin-left: 1.5em; //24px; 
+         }
+   }
+   &__number {
+      padding-bottom: 1em; //16px;
+      display: block;
+      @include fontsDisplayBold;
+      font-size: 0.875em; //14px;
+      line-height: 0.9625em; //15.4px;
+      text-transform: uppercase;
+      color: #545460;
+   }
+   &__title {
+      width: 230px;
+      padding-bottom: 1.5em; //24px;
+      @include fontsDisplayXBold;
+      font-size: 2em; //32px;
+      letter-spacing: -1px;
+      color: #202523;
+         @media screen and (min-width: 1440px) {
+            width: 254px;
+            font-size: 2.25em; //36px;
+         }
+   }
+   &__textBox {
+      @media screen and (min-width: 768px) {
+      }
+      @media screen and (min-width: 1440px) {
+         width: 37.5em; //600px;
+         display: flex;
+         justify-content: space-between
+      }
+   }
+   &__text {
+      width: 14.375em; //230px;
+      @include text;
+         @media screen and (min-width: 768px) {
+            width: 19.625em; //314px;
+         }
+         @media screen and (min-width: 1440px) {
+            width: 18.75em; //300px;
+            margin-right: 1.5em; //24px;
+         }
+   }
+   &__path {
+      position: absolute;
+      width: 15.625em; //250px;
+      height: 12.5em; //200px;
+      clip-path: polygon(100% 100%, 100% 0, 77% 0, 73% 8%, 70% 16%, 64% 22%, 57% 28%, 58% 49%, 77% 38%, 77% 100%);
+      background-color: #EFDCFB;
+      left: -40px;
+      top: 840px;
+         @media screen and (min-width: 768px) {
+            top: 41.875em; //670px;
+            left: 6.25em; //100px;
+         }
+         @media screen and (min-width: 1440px) {
+            left: 25em; //400px;
+            top: 38.125em; //610px;
+         }
+         @media screen and (min-width: 1920px) {
+            top: 38.125em; //610px;
+            left: 40.625em; //650px;
+         }
+   }
+   &__text-2 {
+      display: none;
+         @media screen and (min-width: 1440px) {
+            display: block;
+            
+         }
+   }
+}
+
+.path-2 {
+   display: none;
+      @media screen and (min-width: 768px) {
+         display: block;
+         position: absolute;
+         width: 12.5em; //200px;
+         height: 6.25em; //100px;
+         clip-path: polygon(100% 100%, 100% 0, 77% 0, 73% 8%, 70% 16%, 64% 22%, 57% 28%, 58% 49%, 77% 38%, 77% 100%);
+         background: #CFECFA;
+         z-index: 1;
+         top: 37.5em; //600px;
+         left: 32.1875em; //515px;
+      }
+      @media screen and (min-width: 1440px) {
+         display: none;
+      }
+}
+
+.path-3 {
+   display: none;
+      @media screen and (min-width: 768px) {
+         display: block;
+         position: absolute;
+         clip-path: polygon(100% 100%, 100% 84%, 71% 84%, 98% 51%, 99% 38%, 98% 29%, 94% 23%, 84% 20%, 72% 21%, 60% 24%, 49% 29%, 42% 35%, 48% 46%, 53% 55%, 63% 49%, 75% 44%, 46% 85%, 46% 100%);
+         background: #CFECFA;
+         top: 15em; //240px;
+         left: 0.625em; //10px;
+         height: 15.625em; //250px;
+         z-index: 1;
+         top: 38.75em; //620px;
+         left: 25.3125em; //405px;
+      }
+      @media screen and (min-width: 1440px) {
+         top: 35em; //560px;
+         left: 61.875em; //990px;
+      }
+      @media screen and (min-width: 1920px) {
+         top: 35em; //560px;
+         left: 75em; //1200px;
+      }
+}
+
+.card-1 {
+   margin-left: 1.25em; //20px;
+   margin-right: 1.25em; //20px;
+}
+
+.card-2 {
+   @media screen and (min-width: 768px) {
+      display: block;
+      margin-left: 0.625em; //10px;   
+   }
+   @media screen and (min-width: 1440px) {
+      margin-left: 1.25em; //20px;
+   }
+   @media screen and (min-width: 1920px) {  
+   }
+}

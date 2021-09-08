@@ -1,0 +1,194 @@
+@import "mixin";
+
+.header-box {
+  background-color: $base-color;
+}
+.header {
+    width: 20em; //320px;
+    margin: 0 auto;
+    background-color: $base-color;
+      @media screen and (min-width: 768px) {
+        width: 100%;
+      }
+      @media screen and (min-width: 1440px) {
+        width: 100%;
+      }
+      @media screen and (min-width: 1920px) {
+        width: 100%;
+      }
+    &__menu {
+      display: none;
+      &__list {
+        width: 12.5em //200px;
+      }
+      &__item {
+        margin: 0em 0em 0.625em 0em; //0px 0px 10px 0px;
+      }
+      &__link {
+        @include text;
+        font-weight: 500;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5em; //24px;
+      }
+    }
+    &__menu.active {
+      width: 100%;
+      display: block;
+      position: absolute;
+      background-color: $turquoise-color;
+      padding-left: 0.625em; //10px;
+      left: 0em; //0px;
+      top: 5.625em; //90px;
+      }
+    &__top-menu {
+      width: 17.5625em; //281px;
+      height: 3.75em; //60px;
+      display: flex;
+      justify-content: space-between;
+      padding: 3em 1.25em 1.625em 1.1875em; //48px 20px 26px 19px;
+        @media screen and (min-width: 768px) {
+          width: 45.5625em; //729px;
+          height: 3em; //48px;
+        }
+        @media screen and (min-width: 1440px) {
+          width: 78.75em; //1260px;
+          height: 3em; //48px;
+        }
+        @media screen and (min-width: 1920px) {
+        }
+        &__logo {
+          display: flex;
+          justify-content: space-between;
+            @media screen and (min-width: 1440px) {
+              margin-left: 5.625em; //90px;
+            }
+        &__box {
+          display: flex;
+          &__path {
+            position: relative;
+            width: 1.5625em; //25px;
+            height: 1.5625em; //25px;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background-color: $turquoise-color;
+              @media screen and (min-width: 1440px) {
+                width: 1.66875em; //26.7px;
+                height: 1.66875em; //26.7px;
+              }
+          }
+          &__img {
+            position: absolute;
+            top: 2.9375em; //47px;
+            left: 1.4375em; //23px;
+            width: 1.25em; //20px;
+            height: 1.875em; //30px;
+              @media screen and (min-width: 1440px) {
+                left: 7.1875em; //115px;
+                width: 1.3125em; //21px;
+                height: 2em; //32px;
+              }
+              @media screen and (min-width: 1920px) {
+                width: 1.375em; //22px;
+              }
+          }
+        }
+        &__name {
+          margin-top: 0.125em; //2px;
+          margin-left: 0.375em; //6px;
+          &__item {
+            color: #fff;
+            font-size: 0.4375em; //7px;
+              @media screen and (min-width: 768px) {
+                font-size: 0.9375em; //15px;
+              }
+              @media screen and (min-width: 1440px) {
+                font-size: 1.5em; //24px;
+              }
+          }
+        }
+        }
+        &__medium {
+          &__menu {
+            display: none;
+              @media screen and (min-width: 1440px) {
+                width: 20.3125em; //325px;
+                display: flex;
+                justify-content: space-between;
+              }
+              @media screen and (min-width: 1920px) {
+              }
+          }
+          &__item {
+            &__link {
+              @include text;
+        font-weight: 500;
+              text-decoration: none;
+              color: #fff;
+            }
+            &__link:hover {
+              color: $turquoise-color;
+            }
+          }  
+        }
+        &__contact {
+          display: none;
+            @media screen and (min-width: 1440px) {
+              display: block;
+            }
+          &__button {
+            background: rgba(20, 20, 26, 0.3);
+            border: 2px solid $turquoise-color;
+            box-sizing: border-box;
+            border-radius: 23.9375em; //383px;
+              @media screen and (min-width: 1440px) {    
+              }
+          }
+          &__us {
+            @include fontsDisplayBold;
+            font-size: 1em; //16px;
+            line-height: 1.5em; //24px;
+            text-align: center;
+            color: #FFFFFF;
+          }
+        }
+        }
+        &__burger {
+          width: 2.75em; //44px;
+          height: 2.1875em; //35px;
+          display: block;
+          position: relative;
+          background-color: $base-color;
+          z-index: 3;
+          cursor: pointer;
+            @media screen and (min-width: 1440px) {
+              display: none;
+            }
+            @media screen and (min-width: 1920px) {
+              display: none;
+            }
+          &__item::before,
+          &__item::after {
+              content: "";
+              position: absolute;
+              width: 1em; //16px;
+              height: 0.125em; //2px;
+              margin: 0.8125em 0.625em 0.125em 0.8125em; //13px 10px 2px 13px;
+              z-index: 2;
+              background-color :#fff;
+          }
+          &__item::before {
+              top: 0.625em; //10px;
+          }
+          &__item::after {
+              bottom: 0.8125em; //13px;
+          }
+          &__a {
+              position: absolute;
+              background-color: #fff;
+              width: 1em; //16px;
+              height: 0.125em; //2px;
+              left: 0;
+              margin: 0.8125em 0.625em 0.125em 0.8125em; //13px 10px 2px 13px;
+          }
+        } 
+  }
